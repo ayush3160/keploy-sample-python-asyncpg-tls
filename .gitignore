@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Keploy-generated temporary compose file (regenerated on each `keploy record`)
+docker-compose-tmp.yaml
+
+# Generated TLS certs — every cloner regenerates via `tls/generate.sh`.
+# CRITICAL: the CA private key (ca.key) must NEVER leak to a public repo;
+# do not remove this entry without re-scoping the threat model.
+tls/certs/
+
+# Local env override
+.env
+
+# Note: keploy/ test-set-N/ and *.log files are INTENTIONALLY tracked
+# in this repo so the recordings + replay logs travel with the sample —
+# they're useful as Keploy replay fixtures and as historical references
+# for the cross-NS uprobe-attach work.

@@ -1,0 +1,8 @@
+preScript: ""
+postScript: ""
+appCommand: ""
+template: {}
+metadata: {}
+mockRegistry:
+    mock: 8a82715827b0a7e6a332afc9595bead9cbc87cca6cb6d10fe6c91ea88438f105
+    app: sample-app

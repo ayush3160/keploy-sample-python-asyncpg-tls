@@ -1,0 +1,49 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: provider_engagement_service
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: provider_engagement_service_db
+    command:
+      - "postgres"
+      - "-c"
+      - "ssl=on"
+      - "-c"
+      - "ssl_cert_file=/certs/server.crt"
+      - "-c"
+      - "ssl_key_file=/certs/server.key"
+      - "-c"
+      - "ssl_ca_file=/certs/ca.crt"
+    volumes:
+      - ./tls/certs:/certs:ro
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U provider_engagement_service -d provider_engagement_service_db"]
+      interval: 2s
+      timeout: 5s
+      retries: 20
+
+  app:
+    build: .
+    container_name: provider_engagement_service
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PROVIDER_ENGAGEMENT_SERVICE_POSTGRES__HOST: postgres
+      PROVIDER_ENGAGEMENT_SERVICE_POSTGRES__PORT: "5432"
+      PROVIDER_ENGAGEMENT_SERVICE_POSTGRES__USERNAME: provider_engagement_service
+      PROVIDER_ENGAGEMENT_SERVICE_POSTGRES__PASSWORD: postgres
+      PROVIDER_ENGAGEMENT_SERVICE_POSTGRES__NAME: provider_engagement_service_db
+      PROVIDER_ENGAGEMENT_SERVICE_POSTGRES__REQUIRE_SSL: "false"
+      PROVIDER_ENGAGEMENT_SERVICE_POSTGRES__SSL_CA_FILE: /certs/ca.crt
+      PROVIDER_ENGAGEMENT_SERVICE_POSTGRES__SSL_VERIFY_HOSTNAME: "false"
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+      AWS_DEFAULT_REGION: us-east-1
+    volumes:
+      - ./tls/certs:/certs:ro
+    ports:
+      - "8080:8080"
