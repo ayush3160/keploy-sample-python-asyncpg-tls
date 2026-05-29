@@ -127,7 +127,23 @@ If you only pass `ns_pid` and call `primeTLSHostPIDFilter(ns_pid)`, the BPF hand
 
 Recorded `mocks.yaml` (test-set-9) shows responses shifted by one slot relative to requests, and a `BEGIN` mock carries `paramOIDs:[2950,2950]` (UUID OIDs that actually belong to a later `SELECT ... IN ($1::UUID, $2::UUID)`).
 
-Hypothesis: OpenSSL BIO may coalesce multiple Postgres protocol messages into a single SSL_write, or split one Postgres message across two SSL_writes. The recorder's `query_capture.go::captureQueries` reads from `pair.ClientConn` / `pair.ServerConn` (`SimulatedConn` fed by `pushTLSData`) and assumes byte-stream framing. When two `Parse` messages arrive in the same SSL event, the recorder's `psMap`/`portalMap` state machine attaches the second Parse's `paramOIDs` to the first invocation that hasn't been flushed by a `Sync` yet.
+#### Why test-set-1 replays cleanly but test-set-9 doesn't
+
+The two test-sets recorded the **identical workload** (same single POST against `/api/public/v1/project_provider_batch`, same SQL coverage). Replay succeeds on test-set-1, fails on test-set-9 at `BuildIndex` with `K ParamOIDs but 0 BindValues`. The difference isn't the application — it's the recorder's input shape:
+
+| | test-set-1 (proxy mode) | test-set-9 (low-latency) |
+|---|---|---|
+| TLS handling | Recorder terminates TLS via `recorder.go::UpgradeClientTLS` (own CA, MITM) | App keeps end-to-end TLS to Postgres; agent receives plaintext from OpenSSL uprobes |
+| Bytes arriving at `pair.ClientConn` / `pair.ServerConn` | Continuous TCP byte-stream after TLS termination — boundaries are wherever `Read()` happens to land | Discrete SSL events from `pushTLSData(... toClient, data)` — each event is one `SSL_write` or `SSL_read` payload from `keploy_ssl.c` |
+| Relationship between read boundaries and Postgres message boundaries | Independent — `pUtil.ReadBytes` walks length-prefixes inside the stream | **Coupled to OpenSSL's BIO decisions** — asyncpg's `Parse+Bind+Execute+Sync` for one SQL may share an `SSL_write` with the next SQL's `Parse+Bind+Execute+Sync`, or get split across two `SSL_write`s mid-message |
+| `captureQueries`'s per-Read assumption | Holds — one Read ≈ one Postgres message in practice | **Violated** — one event may carry N messages spanning multiple invocations |
+| `pending` FIFO ordering invariant (`query_capture.go:299`) | Stays in lockstep with server response stream | **Tears** — a `Parse` for SQL #2 lands while invocation for SQL #1 hasn't been flushed by its `Sync` yet, so SQL #2's `paramOIDs` get attached to SQL #1's `psMap` entry |
+
+That's the single sentence: **proxy mode reads bytes off a stream the recorder framed itself; uprobe mode reads bytes pre-framed by OpenSSL into chunks that don't respect Postgres message boundaries**. Both produce the same `pair.ClientConn.Read(...)` surface to `captureQueries`, but only one of them respects the "one Read returns one message" assumption the FIFO state machine was written under.
+
+Why I'm confident this is the mechanism: look at mocks 7–11 in `keploy/test-set-9/mocks.yaml` side-by-side with mocks 7–11 in `keploy/test-set-1/mocks.yaml`. Same SQL set, but in test-set-9 the responses are shifted by one slot and mock-9 (`BEGIN`) carries `paramOIDs:[2950, 2950]` which are UUID OIDs that wire-protocol-can't belong to a `BEGIN` — they belong to the very next SQL's `SELECT ... WHERE id IN ($1::UUID, $2::UUID)`. The state machine attached mock-10's Parse metadata to mock-9's invocation, which is exactly what happens when two consecutive `Parse` messages arrive in the same SSL event before any `Sync` has flushed the first invocation off `pending`.
+
+Hypothesis stated as code-level claim:
 
 **Fix sketch** (in `keploy/integrations/pkg/postgres/v3/recorder/query_capture.go`):
 1. Detect when an SSL event delivers more than one Postgres message at once. The decoded length-prefix already tells us where each message ends.
