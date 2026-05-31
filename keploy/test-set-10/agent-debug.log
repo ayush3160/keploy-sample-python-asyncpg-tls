@@ -1,0 +1,222 @@
+🐰 Keploy: 2026-05-31T11:58:40.077519701Z 	[35mDEBUG[0m	dedup is disabled
+🐰 Keploy: 2026-05-31T11:58:40.080047695Z 	[35mDEBUG[0m	MockOutgoing function called	{"options": {"Rules":[],"MongoPassword":"default@123","TLSPrivateKey":"","Synchronous":false,"SQLDelay":20000000000,"Mocking":true,"DstCfg":null,"Backdate":"2026-05-31T11:56:56.22594571Z","NoiseConfig":{},"DisableAutoHeaderNoise":false,"SkipTLSMITM":false,"ConnKey":"","CapturePackets":false,"OpportunisticTLSIntercept":false,"MysqlPorts":[]}}
+🐰 Keploy: 2026-05-31T11:58:40.081494355Z 	[35mDEBUG[0m	Successfully written to nsswitch config of linux
+🐰 Keploy: 2026-05-31T11:58:40.197270286Z 	[35mDEBUG[0m	Successfully stored mocks for client
+🐰 Keploy: 2026-05-31T11:58:40.198554318Z 	[35mDEBUG[0m	UpdateMockParams called	{"afterTime": "🐰 Keploy: 2000-01-01T00:00:00Z ", "beforeTime": "🐰 Keploy: 2026-05-31T12:58:40.197908351+01:00 ", "useMappingBased": false, "mockMappingCount": 0, "strictMockWindow": true}
+🐰 Keploy: 2026-05-31T11:58:40.198613507Z 	[34mINFO[0m	strict mock-window containment is ACTIVE for this session — per-test mocks whose request timestamp falls outside the outer test window will be dropped rather than promoted across tests. If your replays start reporting missing mocks after an upgrade, this is likely why. To opt out: set KEPLOY_STRICT_MOCK_WINDOW=0 in the environment, OR test.strictMockWindow: false in keploy.yaml.	{"viaPerCallFlag": true, "viaEnvOverride": false, "escape_hatch_env": "KEPLOY_STRICT_MOCK_WINDOW=0", "escape_hatch_config": "test.strictMockWindow: false"}
+🐰 Keploy: 2026-05-31T11:58:40.198645827Z 	[35mDEBUG[0m	strict mock window active for test	{"windowStart": "🐰 Keploy: 2000-01-01T00:00:00Z ", "windowEnd": "🐰 Keploy: 2026-05-31T12:58:40.197908351+01:00 "}
+🐰 Keploy: 2026-05-31T11:58:40.198698166Z 	[35mDEBUG[0m	Original mocks before filtering	{"originalFiltered": 15, "originalUnfiltered": 46}
+🐰 Keploy: 2026-05-31T11:58:40.198893325Z 	[35mDEBUG[0m	After filtering	{"filteredMocks": 15, "unfilteredMocks": 46, "unfilteredWithIsFilteredTrue": 0, "unfilteredWithIsFilteredFalse": 46}
+🐰 Keploy: 2026-05-31T11:58:40.199054004Z 	[35mDEBUG[0m	routed startup-init mocks into startup tree	{"count": 61, "firstTestWindow": "🐰 Keploy: 0001-01-01T00:00:00Z ", "initialStaging": true}
+🐰 Keploy: 2026-05-31T11:58:40.199100504Z 	[35mDEBUG[0m	DEBUG_TRACE SetFilteredMocks: tree swapped + revision bumped	{"mockManagerPtr": "0xc001cded20", "inputMocks": 0, "postgresV3Mocks": 0, "postgresV3MockNames": [], "newRevision": 1}
+🐰 Keploy: 2026-05-31T11:58:40.199325903Z 	[35mDEBUG[0m	Time taken to update mock params duration :	{"duration": "1.016674ms"}
+🐰 Keploy: 2026-05-31T11:58:40.199844089Z 	[35mDEBUG[0m	Agent marked as ready	{"file": "/tmp/agent.ready"}
+🐰 Keploy: 2026-05-31T11:58:40.199882559Z 	[35mDEBUG[0m	Keploy Agent is ready from the ...
+🐰 Keploy: 2026-05-31T11:58:44.360879444Z 	[35mDEBUG[0m	DNS mock miss resolved via upstream forward	{"query": "postgres.", "qtype": "A", "rcode": 0, "answers": 1}
+🐰 Keploy: 2026-05-31T11:58:44.361099283Z 	[35mDEBUG[0m	DNS mock miss resolved via upstream forward	{"query": "postgres.", "qtype": "AAAA", "rcode": 0, "answers": 0}
+🐰 Keploy: 2026-05-31T11:58:44.36158865Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 36468, "Time": 1780228724}
+🐰 Keploy: 2026-05-31T11:58:44.361681029Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:44.361717338Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 36468}
+🐰 Keploy: 2026-05-31T11:58:44.361752208Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:44.361789508Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:44.361937157Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:44.361979187Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:44.362013486Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:44.362052167Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:44.362082077Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:44.362114575Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:44.363883825Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:44.363932884Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "0", "Destination ConnectionID": "1", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:36468", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:44.364011564Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 0, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:44.364012744Z 	[35mDEBUG[0m	discarding mock error outside active test	{"error": "mock not found: BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "totalDiscarded": 1}
+🐰 Keploy: 2026-05-31T11:58:44.364060194Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:45.595578993Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 36476, "Time": 1780228725}
+🐰 Keploy: 2026-05-31T11:58:45.595686864Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:45.595726584Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 36476}
+🐰 Keploy: 2026-05-31T11:58:45.595755272Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:45.595785872Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:45.595935431Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:45.595981692Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:45.596014231Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:45.596040381Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:45.596087551Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:45.596114451Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:45.597936039Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:45.597989889Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "2", "Destination ConnectionID": "3", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:36476", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:45.598071208Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 2, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:45.598103428Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:46.83075408Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 36492, "Time": 1780228726}
+🐰 Keploy: 2026-05-31T11:58:46.830872399Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:46.830922819Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 36492}
+🐰 Keploy: 2026-05-31T11:58:46.830964059Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:46.831010538Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:46.831151087Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:46.831207647Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:46.831235797Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:46.831260967Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:46.831281006Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:46.831308126Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:46.833306414Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:46.833382183Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "4", "Destination ConnectionID": "5", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:36492", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:46.833511382Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 4, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:46.833574222Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:48.085439103Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 36496, "Time": 1780228728}
+🐰 Keploy: 2026-05-31T11:58:48.085531542Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:48.085565282Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 36496}
+🐰 Keploy: 2026-05-31T11:58:48.085595423Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:48.085639152Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:48.085756781Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:48.0857967Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:48.085825Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:48.085849781Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:48.085874271Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:48.08590371Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:48.08756682Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:48.087624109Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "6", "Destination ConnectionID": "7", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:36496", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:48.087713089Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 6, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:48.087754888Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:49.317350589Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 36512, "Time": 1780228729}
+🐰 Keploy: 2026-05-31T11:58:49.317444648Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:49.317474468Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 36512}
+🐰 Keploy: 2026-05-31T11:58:49.317501788Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:49.317541718Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:49.317653907Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:49.317684467Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:49.317708366Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:49.317730506Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:49.317753316Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:49.317779436Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:49.319459475Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:49.319515516Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "8", "Destination ConnectionID": "9", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:36512", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:49.319593355Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 8, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:49.319624184Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:50.568403006Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 36516, "Time": 1780228730}
+🐰 Keploy: 2026-05-31T11:58:50.568523945Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:50.568564684Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 36516}
+🐰 Keploy: 2026-05-31T11:58:50.568591774Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:50.568632274Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:50.568813473Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:50.568885582Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:50.568919312Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:50.568948392Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:50.568973002Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:50.569004491Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:50.570703221Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:50.5707637Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "10", "Destination ConnectionID": "11", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:36516", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:50.57083714Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 10, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:50.570877249Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:51.812038358Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 43276, "Time": 1780228731}
+🐰 Keploy: 2026-05-31T11:58:51.812141497Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:51.812176366Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 43276}
+🐰 Keploy: 2026-05-31T11:58:51.812205506Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:51.812238816Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:51.812361965Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:51.812399945Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:51.812429275Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:51.812454624Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:51.812474774Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:51.812504004Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:51.814126954Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:51.814184694Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "12", "Destination ConnectionID": "13", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:43276", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:51.814267384Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 12, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:51.814301603Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:53.059630335Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 43286, "Time": 1780228733}
+🐰 Keploy: 2026-05-31T11:58:53.059727354Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:53.059769413Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 43286}
+🐰 Keploy: 2026-05-31T11:58:53.059796493Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:53.059828413Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:53.059962272Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:53.060019692Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:53.060058912Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:53.060086402Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:53.060107472Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:53.060150552Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:53.061718512Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:53.061777001Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "14", "Destination ConnectionID": "15", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:43286", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:53.061879701Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 14, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:53.06192466Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:54.308040358Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 43298, "Time": 1780228734}
+🐰 Keploy: 2026-05-31T11:58:54.308161757Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:54.308193087Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 43298}
+🐰 Keploy: 2026-05-31T11:58:54.308223047Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:54.308276216Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:54.308445275Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:54.308508824Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:54.308565065Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:54.308603333Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:54.308632024Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:54.308659904Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:54.310278003Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:54.310330482Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "16", "Destination ConnectionID": "17", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:43298", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:54.310407883Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 16, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:54.310437513Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:55.547437227Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 43312, "Time": 1780228735}
+🐰 Keploy: 2026-05-31T11:58:55.547536046Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:55.547568907Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 43312}
+🐰 Keploy: 2026-05-31T11:58:55.547601106Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:55.547631925Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:55.547763285Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:55.547798964Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:55.547823874Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:55.547847114Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:55.547871134Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:55.547895174Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:55.549469264Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:55.549519973Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "18", "Destination ConnectionID": "19", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:43312", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:55.549594633Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 18, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:55.549621443Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:56.783857805Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 43322, "Time": 1780228736}
+🐰 Keploy: 2026-05-31T11:58:56.783952814Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:56.783986084Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 43322}
+🐰 Keploy: 2026-05-31T11:58:56.784018815Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:56.784053904Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:56.784238623Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:56.784305552Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:56.784352562Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:56.784380202Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:56.784409871Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:56.784443711Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:56.786074641Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:56.786131371Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "20", "Destination ConnectionID": "21", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:43322", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:56.78621995Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 20, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:56.78626603Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:58.041942277Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 43330, "Time": 1780228738}
+🐰 Keploy: 2026-05-31T11:58:58.042031796Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:58.042075776Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 43330}
+🐰 Keploy: 2026-05-31T11:58:58.042106785Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:58.042144185Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:58.042254295Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:58.042285445Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:58.042311984Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:58.042337794Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:58.042358994Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:58.042385184Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:58.043951214Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:58.044001874Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "22", "Destination ConnectionID": "23", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:43330", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:58.044084843Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 22, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:58.044119093Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:59.278278135Z 	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 43344, "Time": 1780228739}
+🐰 Keploy: 2026-05-31T11:58:59.278377465Z 	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+🐰 Keploy: 2026-05-31T11:58:59.278406954Z 	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 43344}
+🐰 Keploy: 2026-05-31T11:58:59.278430504Z 	[35mDEBUG[0m	the destination is ipv4
+🐰 Keploy: 2026-05-31T11:58:59.278462974Z 	[35mDEBUG[0m		{"DestIp4": 2886926339, "DestPort": 5432}
+🐰 Keploy: 2026-05-31T11:58:59.278621403Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+🐰 Keploy: 2026-05-31T11:58:59.278678073Z 	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+🐰 Keploy: 2026-05-31T11:58:59.278704523Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+🐰 Keploy: 2026-05-31T11:58:59.278729302Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+🐰 Keploy: 2026-05-31T11:58:59.278751662Z 	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:59.278778113Z 	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+🐰 Keploy: 2026-05-31T11:58:59.280372532Z 	[31mERROR[0m	v3 replay: failed to build startup index	{"Type": "postgres_v3", "totalMocks": 61, "pgV3Mocks": 60, "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "startup-tier mocks failed to assemble; confirm the recording's PostgresV3* envelopes are well-formed and re-record if any were hand-edited"}
+🐰 Keploy: 2026-05-31T11:58:59.280429641Z 	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "24", "Destination ConnectionID": "25", "Destination Address": "172.19.0.3:5432", "Client IP Address": "172.19.0.2:43344", "error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:58:59.280507872Z 	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 24, "Duration(ms)": 2}
+🐰 Keploy: 2026-05-31T11:58:59.28055564Z 	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-38\" (invocation \"proxyless-5432:10\", hash sha256:4f5582225f4ee4c6fbf6c76538b8262751c8e9f1e59fab03e23dcba91caad0bc) has 8 ParamOIDs but 2 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+🐰 Keploy: 2026-05-31T11:59:00.267245504Z 	[35mDEBUG[0m	UpdateMockParams called	{"afterTime": "🐰 Keploy: 2026-05-31T11:56:56.22594571Z ", "beforeTime": "🐰 Keploy: 2026-05-31T11:56:57.525286122Z ", "useMappingBased": false, "mockMappingCount": 0, "strictMockWindow": true}
+🐰 Keploy: 2026-05-31T11:59:00.267334024Z 	[35mDEBUG[0m	strict mock window active for test	{"windowStart": "🐰 Keploy: 2026-05-31T11:56:56.22594571Z ", "windowEnd": "🐰 Keploy: 2026-05-31T11:56:57.525286122Z "}
+🐰 Keploy: 2026-05-31T11:59:00.267380694Z 	[35mDEBUG[0m	Original mocks before filtering	{"originalFiltered": 15, "originalUnfiltered": 46}
+🐰 Keploy: 2026-05-31T11:59:00.267572243Z 	[35mDEBUG[0m	lax-promoted per-test mocks into session pool for cross-test reuse	{"count": 12}
+🐰 Keploy: 2026-05-31T11:59:00.267604143Z 	[35mDEBUG[0m	After filtering	{"filteredMocks": 3, "unfilteredMocks": 58, "unfilteredWithIsFilteredTrue": 0, "unfilteredWithIsFilteredFalse": 58}
+🐰 Keploy: 2026-05-31T11:59:00.267656662Z 	[35mDEBUG[0m	DEBUG_TRACE SetFilteredMocks: tree swapped + revision bumped	{"mockManagerPtr": "0xc001cded20", "inputMocks": 3, "postgresV3Mocks": 3, "postgresV3MockNames": ["mock-52", "mock-53", "mock-60"], "newRevision": 3}
+🐰 Keploy: 2026-05-31T11:59:00.267890251Z 	[35mDEBUG[0m	Time taken to update mock params duration :	{"duration": "715.256µs"}
+🐰 Keploy: 2026-05-31T11:59:00.276239997Z 	[35mDEBUG[0m	Received graceful shutdown notification
+🐰 Keploy: 2026-05-31T11:59:00.276285858Z 	[35mDEBUG[0m	Setting graceful shutdown flag on proxy
+🐰 Keploy: 2026-05-31T11:59:00.276312347Z 	[35mDEBUG[0m	Graceful shutdown flag set - connection errors will be logged as debug

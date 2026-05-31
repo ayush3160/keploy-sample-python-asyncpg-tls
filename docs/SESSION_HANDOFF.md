@@ -143,12 +143,33 @@ That's the single sentence: **proxy mode reads bytes off a stream the recorder f
 
 Why I'm confident this is the mechanism: look at mocks 7–11 in `keploy/test-set-9/mocks.yaml` side-by-side with mocks 7–11 in `keploy/test-set-1/mocks.yaml`. Same SQL set, but in test-set-9 the responses are shifted by one slot and mock-9 (`BEGIN`) carries `paramOIDs:[2950, 2950]` which are UUID OIDs that wire-protocol-can't belong to a `BEGIN` — they belong to the very next SQL's `SELECT ... WHERE id IN ($1::UUID, $2::UUID)`. The state machine attached mock-10's Parse metadata to mock-9's invocation, which is exactly what happens when two consecutive `Parse` messages arrive in the same SSL event before any `Sync` has flushed the first invocation off `pending`.
 
-Hypothesis stated as code-level claim:
+#### Update from test-set-11 (after the initial diagnosis): bug is NOT SSL-specific
+
+Subsequent reproduction widened the hypothesis. test-set-11 was recorded with TLS partially off (mix of `connID: proxyless-5432` plain-TCP eBPF events and `connID: tls-ssl-…` SSL uprobe events in the same run) and STILL hits the exact same `BuildIndex` failure — `mock-10` for `BEGIN ISOLATION LEVEL READ COMMITTED;` carrying 7 VARCHAR (OID 1043) ParamOIDs that wire-protocol-can't belong to a simple-query. **Same SQL AST hash `sha256:83b556…` as test-set-9's mock-9.** The "donor" Parse just had different param types.
+
+So the corrected, broader claim is:
+
+**Any transport where one `Read()` can return >1 Postgres message tears the `pending` FIFO invariant in `query_capture.go`.** There are two such transports today, and both reproduce the bug:
+
+| Transport | Coalescing happens at | Reproduces this bug? | Example mock |
+|---|---|---|---|
+| **Proxy mode** (`recorder.go::UpgradeClientTLS` + Go `net.Conn`) | Stream — no per-event boundaries | ❌ No — `pUtil.ReadBytes` walks length-prefixes inside the byte stream | test-set-1 (proxy reference) replays cleanly |
+| **SSL uprobe** (`ssl_capture.go::pushTLSData`, plaintext from OpenSSL) | OpenSSL BIO boundaries (`SSL_write(buf, N)`) | ✅ Yes | test-set-9 (`connID: tls-ssl-<pid>-<sslPtr>`) — BEGIN + 2 UUID OIDs |
+| **Proxyless eBPF fentry** (`proxyless_ringbuf.go` over `tcp_sendmsg`/`tcp_recvmsg`) | Kernel sendmsg syscall boundaries (one writev → one event) | ✅ Yes | test-set-11 (`connID: proxyless-5432`) — BEGIN + 7 VARCHAR OIDs |
+
+Both broken transports feed `pair.ClientConn`/`pair.ServerConn` via `pushCapturedData` and present a `Read()` surface to `captureQueries`, but each `Read()` returns one whole upstream-coalesced event — which may contain a full `Parse + Bind + Execute + Sync` for SQL #1 followed by `Parse + Bind + Execute + Sync` for SQL #2 in the same buffer. The `psMap` state-machine treats them as one big sequence and attaches SQL #2's `paramOIDs` to SQL #1's still-pending invocation.
 
 **Fix sketch** (in `keploy/integrations/pkg/postgres/v3/recorder/query_capture.go`):
-1. Detect when an SSL event delivers more than one Postgres message at once. The decoded length-prefix already tells us where each message ends.
-2. Drain the entire decoded event into a parser that walks per-message and only advances `pending` once per `Execute` (or simple-query `Q`). Today's per-Read loop conflates them.
-3. **OR** add a defensive guard at line 727/754: if the next message arriving in the same SSL event would land a `Parse` while `pending[0]` is still a simple-query (BEGIN/COMMIT/ROLLBACK/SHOW…) without an Execute yet, that combination is wire-protocol-impossible — drop the mock instead of emitting cross-contaminated data.
+
+1. **Walk per-message inside a single `Read()`**, not per-Read. The Postgres v3 wire format is `[tag byte][int32 length][N-5 bytes of payload]`. Decode the length-prefix repeatedly until the buffer is drained, advancing `pending` exactly once per `Execute` (extended query) or once per `Q` simple-query. This is the proper fix and works for both transports.
+
+2. **Defensive guard at line 727 / 754** (cheap interim): if a `Parse` arrives while `pending[0]` is still an unflushed simple-query (BEGIN/COMMIT/ROLLBACK/SHOW…), refuse to attach paramOIDs to it — the combination is wire-protocol-impossible. Drops the mock at record time instead of letting it explode at replay time. Cheap enough to ship while the proper rewrite is being designed.
+
+3. **Cross-verify the fix against BOTH transports** by replaying:
+   - test-set-9 (SSL uprobe-sourced, TLS on Postgres) — should `keploy test --test-sets test-set-9` pass
+   - test-set-11 (mixed proxyless + SSL uprobe, TLS partially off) — same
+
+If only one of these passes after the fix, the rewrite missed a coalescing edge case in the other transport.
 
 ### Pre-existing BPF compile issue worth knowing
 
@@ -164,7 +185,7 @@ In **this repo** (`ayush3160/keploy-sample-python-asyncpg-tls`):
 - `app/` — the FastAPI sample. Routers per endpoint family, schemas with camelCase aliases, sns publisher mirroring the outbox-event-factory shape.
 - `scripts/entrypoint.sh` — wait-for-DB + one-shot schema init + optional seed + exec gunicorn. Honors `REQUIRE_SSL` / `SSL_CA_FILE` env vars for the asyncpg probe.
 - `tls/generate.sh` — local CA + server cert. OpenSSL 3 friendly (keyCertSign on CA, SAN on server). Run via `docker run --rm -v "$PWD/tls/certs:/certs" alpine:3.20 sh /generate.sh`.
-- `keploy/test-set-{0..9}/` — recorded mocks and tests across the journey. test-set-1 is the proxy-mode reference; test-set-9 is the working low-latency capture. test-set-5 is the broken `pid: host` attempt (curl-as-HTTP_CLIENT).
+- `keploy/test-set-{0..11}/` — recorded mocks and tests across the journey. test-set-1 is the proxy-mode reference (replays cleanly). test-set-5 is the broken `pid: host` attempt (curl-as-HTTP_CLIENT). test-set-9 is the working low-latency capture via SSL uprobes — surfaces the recorder-side desync as `BEGIN + 2 UUID OIDs`. test-set-11 is the same desync via the proxyless eBPF fentry path (`connID: proxyless-5432`), no TLS involved — `BEGIN + 7 VARCHAR OIDs`. The fact that test-set-9 and test-set-11 share the same `BEGIN` AST hash (`sha256:83b556…`) with different "donor" paramOIDs is the smoking-gun pair that proves the bug is transport-agnostic.
 - `record.log`, `replay.log`, `replay-test-set-1.log` — agent traces. Grep for `populated keploy_agent_registration_map`, `TLS uprobes attached for PID`, `BuildIndex` to find the diagnostic moments.
 - `docker-compose.yml` — TLS on Postgres by default, app pinned to `REQUIRE_SSL=true` and CA-pinned + hostname-verified.
 
@@ -185,11 +206,13 @@ For the next agent picking this up:
 
 1. **First: read PR keploy/enterprise#2049 description in full.** It's the single best-organized explanation of the architecture decisions and why each piece is shaped the way it is.
 
-2. **Fix the recorder-side desync in `keploy/integrations`**:
-   - Reproduce: in this repo, run `keploy record -c "docker compose up --build" --container-name=provider_engagement_service --low-latency`, then `keploy test`. Replay will fail at mock-9 in test-set-9 (or similar).
-   - Read `pkg/postgres/v3/recorder/query_capture.go::captureQueries` and trace what happens when a single SSL event delivers `Parse + Bind + Execute + Sync` for SQL #1 followed by `Parse + Bind + Execute + Sync` for SQL #2 back-to-back. The current per-Read assumption is that each Read returns one Postgres message. Under SSL framing it can return many.
-   - Easiest first cut: defensive guard at line 727/754 that drops a mock whose `pending[0]` is a simple-query AND `paramOIDs > 0` — those are wire-protocol-impossible and are the smoking-gun shape we see in test-set-9.
-   - Proper fix: rewrite the read loop to walk all Postgres messages in a decoded SSL event in one pass, only advancing `pending` once per `Execute`/`Q`.
+2. **Fix the recorder-side desync in `keploy/integrations`** (NOT SSL-specific — reproduces on the proxyless eBPF fentry path too; see the updated hypothesis section above):
+   - Reproduce path A (SSL uprobe, TLS on Postgres): run `keploy record --low-latency -c "docker compose up --build" --container-name=provider_engagement_service`, then `keploy test --test-sets test-set-9`. Fails at `mock-9` (BEGIN + 2 UUID OIDs).
+   - Reproduce path B (proxyless eBPF fentry, TLS off / partially off): same setup, replay against `test-set-11`. Fails at `mock-10` (same BEGIN AST, different "donor" OIDs — 7× VARCHAR).
+   - Read `pkg/postgres/v3/recorder/query_capture.go::captureQueries` and trace what happens when a single `Read()` returns `Parse + Bind + Execute + Sync` for SQL #1 followed by `Parse + Bind + Execute + Sync` for SQL #2 back-to-back. Both upstream paths (SSL uprobe and eBPF fentry) feed `pair.ClientConn`/`pair.ServerConn` via `pushCapturedData`, and both can deliver a multi-message buffer in a single `Read()`. The current per-Read assumption is "one Read = one Postgres message". That's only true in proxy mode.
+   - Easiest first cut: defensive guard at line 727/754 — refuse to attach `paramOIDs` to a `pending[0]` whose SQL is a simple-query (BEGIN/COMMIT/ROLLBACK/SHOW…). Wire-protocol-impossible regardless of transport; cheap to ship.
+   - Proper fix: rewrite the read loop to length-prefix-walk all Postgres v3 messages in a single decoded buffer in one pass, advancing `pending` exactly once per `Execute`/simple-`Q`.
+   - **Cross-verify against BOTH test-set-9 AND test-set-11 after the fix.** If only one passes, the rewrite missed a coalescing edge case in the other transport.
 
 3. **DNS capture early-startup race (lower priority)**: test-set-9 has 0 DNS mocks where test-set-1 (proxy mode) has 4. DNS pipeline is session-aware now via `MocksSink`, but early DNS responses arrive as `DNS response with no matching pending query` because the request was missed before the agent's eBPF DNS tap was attached. The current code lazy-attaches the DNS pipeline on the first DNS event — that misses anything before. Bind it eagerly at agent boot, not on first event.
 

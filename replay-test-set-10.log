@@ -1,0 +1,1022 @@
+🐰 Keploy: 2026-05-31T13:01:37.716616619+01:00 	[34mINFO[0m	Starting Keploy	{"version": "3.5.25", "apiServerURL": "https://api.keploy.io", "inDocker": false}
+
+[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m▓[0m[38;5;202m▄[0m
+[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▓[0m[38;5;202m▓[0m[38;5;202m▓[0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m▓[0m[38;5;202m▄[0m
+[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m▓[0m[38;5;202m▒[0m
+[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▀[0m[38;5;202m▓[0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m▄[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▄[0m[38;5;202m▄[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▄[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▌[0m
+[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▄[0m[38;5;202m▌[0m[38;5;202m▌[0m[38;5;202m▓[0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m▄[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m [0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m▀[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▄[0m[38;5;202m▌[0m[38;5;202m▀[0m[38;5;202m▄[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▓[0m[38;5;202m▓[0m[38;5;202m▌[0m[38;5;202m▄[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▄[0m[38;5;202m▌[0m[38;5;202m▓[0m[38;5;202m▓[0m[38;5;202m▌[0m[38;5;202m▄[0m[38;5;202m [0m[38;5;202m▌[0m[38;5;202m▌[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▓[0m
+[38;5;208m [0m[38;5;208m [0m[38;5;208m [0m[38;5;208m [0m[38;5;208m [0m[38;5;208m [0m[38;5;208m [0m[38;5;208m▓[0m[38;5;208m█[0m[38;5;208m█[0m[38;5;208m█[0m[38;5;208m█[0m[38;5;208m█[0m[38;5;208m█[0m[38;5;208m█[0m[38;5;208m█[0m[38;5;208m█[0m[38;5;208m▌[0m[38;5;208m▓[0m[38;5;202m▓[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m▄[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m▄[0m[38;5;202m▓[0m[38;5;202m▓[0m[38;5;202m [0m[38;5;202m▐[0m[38;5;202m█[0m[38;5;202m▌[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m [0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m▌[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m▌[0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m▓[0m
+[38;5;214m [0m[38;5;214m [0m[38;5;214m [0m[38;5;214m [0m[38;5;214m [0m[38;5;214m [0m[38;5;214m▓[0m[38;5;214m▓[0m[38;5;214m▓[0m[38;5;214m▓[0m[38;5;214m▀[0m[38;5;214m▀[0m[38;5;214m▀[0m[38;5;214m▀[0m[38;5;214m▓[0m[38;5;214m▓[0m[38;5;214m▓[0m[38;5;214m▓[0m[38;5;214m▓[0m[38;5;214m▓[0m[38;5;214m▌[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m█[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m▓[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m▓[0m[38;5;202m▌[0m[38;5;202m▄[0m[38;5;202m▄[0m[38;5;202m [0m[38;5;202m▐[0m[38;5;202m█[0m[38;5;202m▓[0m[38;5;202m▄[0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m▀[0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m▓[0m[38;5;202m█[0m[38;5;202m [0m[38;5;202m▀[0m[38;5;202m█[0m[38;5;202m▄[0m[38;5;202m▄[0m[38;5;202m█[0m[38;5;202m▀[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m▓[0m[38;5;202m█[0m
+[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m▓[0m[38;5;226m▌[0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;202m [0m[38;5;202m▐[0m[38;5;202m█[0m[38;5;202m▌[0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m█[0m[38;5;202m▌[0m
+[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m▓[0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;226m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202m [0m[38;5;202mE[0m[38;5;202mN[0m[38;5;202mT[0m[38;5;202mE[0m[38;5;202mR[0m[38;5;202mP[0m[38;5;202mR[0m[38;5;202mI[0m[38;5;202mS[0m[38;5;202mE[0m[38;5;202m [0m[38;5;202mE[0m[38;5;202mD[0m[38;5;202mI[0m[38;5;202mT[0m[38;5;202mI[0m[38;5;202mO[0m[38;5;202mN[0m
+
+Keploy Enterprise: 3.5.25
+
+🐰 Keploy: 2026-05-31T13:01:38.811661467+01:00 	[35mDEBUG[0m	config has been initialised	{"for cmd": "test", "config": {"path":"","appName":"sample-app","appId":0,"command":"docker compose up --build","templatize":{"testSets":[]},"port":0,"e2e":false,"dnsPort":26789,"proxyPort":16789,"incomingProxyPort":36789,"debug":true,"disableTele":false,"disableANSI":false,"jsonOutput":false,"inDocker":false,"containerName":"provider_engagement_service","networkName":"","buildDelay":30,"test":{"selectedTests":{},"globalNoise":{"global":{},"test-sets":{}},"replaceWith":{"global":{"url":{},"port":{}},"test-sets":{}},"delay":20,"healthUrl":"","healthPollTimeout":60000000000,"host":"localhost","port":0,"grpcPort":0,"ssePort":0,"protocol":{"grpc":{"port":0},"http":{"port":0},"sse":{"port":0}},"apiTimeout":5,"skipCoverage":false,"coverageReportPath":"","ignoreOrdering":true,"mongoPassword":"default@123","language":"","removeUnusedMocks":false,"preserveFailedMocks":false,"fallBackOnMiss":false,"jacocoAgentPath":"","basePath":"","mocking":true,"ignoredTests":{},"disableLineCoverage":false,"updateTemplate":false,"mustPass":false,"maxFailAttempts":5,"maxFlakyChecks":1,"protoFile":"","protoDir":"","protoInclude":[],"compareAll":false,"schemaMatch":false,"updateTestMapping":false,"disableAutoHeaderNoise":false,"strictMockWindow":true,"keepAppAlive":false},"record":{"filters":[],"basePath":"","recordTimer":0,"metadata":"","testCaseNaming":"descriptive","sync":false,"enableSampling":0,"memoryLimit":0,"globalPassthrough":false,"tlsPrivateKeyPath":"","capturePackets":false,"opportunisticTlsIntercept":false,"recordBuffer":{"maxMemoryPerConnection":67108864,"queueSize":1024}},"report":{"selectedTestSets":{},"showFullBody":false,"reportPath":"","summary":false,"testCaseIDs":[],"format":""},"normalize":{"selectedTests":null,"testReport":"","allowHighRisk":false},"disableMapping":true,"retryPassing":false,"configPath":"/home/ayush/test-low-latency/sample-app","bypassRules":[],"mysqlPorts":[],"enableTesting":false,"generateGithubActions":false,"keployContainer":"keploy-v3","keployNetwork":"keploy-network","cmdType":"native","contract":{"services":[],"tests":[],"path":"","download":false,"generate":false,"driven":"consumer","mappings":{"servicesMapping":{},"self":"s1"}},"agent":{"ClientNSPID":0,"Container":"","KeployContainer":"","DockerDelay":0,"Synchronous":false,"AgentURI":"","IsDocker":false,"CommandType":"","EnableTesting":false,"ProxyPort":0,"IncomingProxyPort":0,"DnsPort":0,"Mode":"","GlobalPassthrough":false,"CapturePackets":false,"OpportunisticTLSIntercept":false,"AgentPort":0,"AppPorts":null,"AppNetworks":null,"NetworkAliases":null,"BuildDelay":0,"PassThroughPorts":null,"MemoryLimit":0,"ConfigPath":"","RecordBufferMaxMemoryPerConn":0,"RecordBufferQueueSize":0,"ExtraArgs":null,"EnableSampling":0,"EnableIPv6Redirect":false,"CAJavaHome":"","InMemoryCompose":null},"inCi":false,"serverPort":0}}
+🐰 Keploy: 2026-05-31T13:01:38.812857979+01:00 	[35mDEBUG[0m	OAuth auth detected; report upload disabled by default. Pass --disableReportUpload=false to override.
+🐰 Keploy: 2026-05-31T13:01:38.813022268+01:00 	[35mDEBUG[0m	app hooks initialized - oss
+🐰 Keploy: 2026-05-31T13:01:38.813193937+01:00 	[35mDEBUG[0m	Setting up enterprise hooks	{"cmd": "test"}
+🐰 Keploy: 2026-05-31T13:01:38.813246897+01:00 	[35mDEBUG[0m	Starting Keploy replay... Please wait.
+🐰 Keploy: 2026-05-31T13:01:38.813342616+01:00 	[34mINFO[0m	Test Sets to be Replayed	{"testSets": ["test-set-9", "test-set-4", "test-set-5", "test-set-8", "test-set-0", "test-set-7", "test-set-2", "test-set-6", "test-set-1", "test-set-3", "test-set-10", "test-set-11"]}
+🐰 Keploy: 2026-05-31T13:01:38.813507846+01:00 	[35mDEBUG[0m	failed to open file docker	{"error": "open docker: no such file or directory"}
+🐰 Keploy: 2026-05-31T13:01:38.813543815+01:00 	[35mDEBUG[0m	failed to detect language, skipping coverage calculation. please use --language to manually set the language
+🐰 Keploy: 2026-05-31T13:01:38.813556225+01:00 	[35mDEBUG[0m	language detected	{"language": "Unknown", "executable": "docker"}
+🐰 Keploy: 2026-05-31T13:01:38.813986363+01:00 	[35mDEBUG[0m	Using available ports	{"agent-port": 34317, "proxy-port": 16789, "dns-port": 26789}
+🐰 Keploy: 2026-05-31T13:01:38.814010763+01:00 	[35mDEBUG[0m	Application command provided :	{"cmd": "docker compose up --build"}
+🐰 Keploy: 2026-05-31T13:01:38.815002406+01:00 	[35mDEBUG[0m	Found docker compose file paths: [docker-compose.yml]
+🐰 Keploy: 2026-05-31T13:01:38.815804212+01:00 	[35mDEBUG[0m	Generating agent service with command	{"command": ["--port", "34317", "--proxy-port", "16789", "--dns-port", "26789", "--client-pid", "733006", "--mode", "test", "--is-docker", "--debug", "--disable-mapping=true", "--enable-testing", "--config-path", "/home/ayush/test-low-latency/sample-app", "--build-delay", "30"]}
+🐰 Keploy: 2026-05-31T13:01:38.815882061+01:00 	[35mDEBUG[0m	dedup and time freeze are disabled, skipping before docker compose setup hook - enterprise
+🐰 Keploy: 2026-05-31T13:01:38.817137073+01:00 	[35mDEBUG[0m	Created new temporary docker-compose for keploy internal use	{"path": "docker-compose-tmp.yaml"}
+🐰 Keploy: 2026-05-31T13:01:38.817210032+01:00 	[34mINFO[0m	Running application using a temporary Keploy-generated Docker Compose file (will be cleaned up automatically)	{"cmd": "docker compose -f ./docker-compose-tmp.yaml up --abort-on-container-exit --exit-code-from app --build", "composePath": "docker-compose-tmp.yaml"}
+🐰 Keploy: 2026-05-31T13:01:38.817234533+01:00 	[35mDEBUG[0m	Keploy client setup completed successfully
+🐰 Keploy: 2026-05-31T13:01:38.817391901+01:00 	[35mDEBUG[0m	Config file not found, using default config	{"testSet": "test-set-11", "filePath": "/home/ayush/test-low-latency/sample-app/keploy/test-set-11", "error": "failed to read the file: open /home/ayush/test-low-latency/sample-app/keploy/test-set-11/config.yaml: no such file or directory"}
+🐰 Keploy: 2026-05-31T13:01:38.817435771+01:00 	[35mDEBUG[0m	Not setting secrets	{"testSet": "test-set-11", "configSupportsSecrets": true, "secretCount": 0}
+🐰 Keploy: 2026-05-31T13:01:38.817458862+01:00 	[35mDEBUG[0m	mock registry config for download not found, continuing with local mock	{"testSetID": "test-set-11"}
+🐰 Keploy: 2026-05-31T13:01:38.81748332+01:00 	[34mINFO[0m	running	{"test-set": "test-set-11", "attempt": 1}
+🐰 Keploy: 2026-05-31T13:01:38.818471034+01:00 	[35mDEBUG[0m	Config file not found, using default config	{"testSet": "test-set-11", "filePath": "/home/ayush/test-low-latency/sample-app/keploy/test-set-11", "error": "failed to read the file: open /home/ayush/test-low-latency/sample-app/keploy/test-set-11/config.yaml: no such file or directory"}
+🐰 Keploy: 2026-05-31T13:01:38.818517445+01:00 	[35mDEBUG[0m	Not setting secrets	{"testSet": "test-set-11", "configSupportsSecrets": true, "secretCount": 0}
+🐰 Keploy: 2026-05-31T13:01:38.818718743+01:00 	[35mDEBUG[0m	Output is NOT a TTY (Docker Compose -> Stdout/Stderr)
+🐰 Keploy: 2026-05-31T13:01:38.818774393+01:00 	[34mINFO[0m	Starting Application :	{"executing_cmd": "/usr/bin/sh -c docker compose -f ./docker-compose-tmp.yaml up --abort-on-container-exit --exit-code-from app --build"}
+ Image sample-app-app Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 524B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 378B done
+#2 DONE 0.0s
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/python:3.13-slim
+🐰 Keploy: 2026-05-31T13:01:39.819678885+01:00 	[35mDEBUG[0m	Checking agent health	{"url": "http://localhost:34317/agent/health"}
+#4 DONE 1.2s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [1/8] FROM docker.io/library/python:3.13-slim@sha256:b04b5d7233d2ad9c379e22ea8927cd1378cd15c60d4ef876c065b25ea8fb3bf3
+#6 resolve docker.io/library/python:3.13-slim@sha256:b04b5d7233d2ad9c379e22ea8927cd1378cd15c60d4ef876c065b25ea8fb3bf3 done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 1.79kB done
+#7 DONE 0.0s
+
+#8 [7/8] COPY scripts ./scripts
+#8 CACHED
+
+#9 [5/8] COPY app ./app
+#9 CACHED
+
+#10 [6/8] COPY gunicorn.conf.py ./
+#10 CACHED
+
+#11 [2/8] WORKDIR /app
+#11 CACHED
+
+#12 [4/8] RUN pip install --no-cache-dir -r requirements.txt
+#12 CACHED
+
+#13 [3/8] COPY requirements.txt ./
+#13 CACHED
+
+#14 [8/8] RUN chmod +x scripts/entrypoint.sh
+#14 CACHED
+
+#15 exporting to image
+#15 exporting layers done
+#15 exporting manifest sha256:f89f0bef479c0764cd38621a0ffe2e9741f83238037a6152cfc4cf95097df023 done
+#15 exporting config sha256:c22d4774c427144ed19e758794a6909ce9a6d4d2722d24a7e4e39d751b972492 done
+#15 exporting attestation manifest sha256:34baeceded66edf7a86ef77b233f5d1d1d91f90e31c6db08d8703de81f40c7d4 done
+#15 exporting manifest list sha256:3654a1e22bddd306f72a43719615ca8ebff102128d68164ee35d906842a9dbd2 done
+#15 naming to docker.io/library/sample-app-app:latest done
+#15 unpacking to docker.io/library/sample-app-app:latest done
+#15 DONE 0.0s
+
+#16 resolving provenance for metadata file
+#16 DONE 0.0s
+ Image sample-app-app Built 
+ Network sample-app_default Creating 
+ Network sample-app_default Created 
+ Container sample-app-postgres-1 Creating 
+ Container keploy-v3-be0e Creating 
+ Container keploy-v3-be0e Created 
+ Container sample-app-postgres-1 Created 
+ Container provider_engagement_service Creating 
+ Container provider_engagement_service Created 
+Attaching to keploy-v3-be0e, provider_engagement_service, postgres-1
+ Container sample-app-postgres-1 Starting 
+ Container keploy-v3-be0e Starting 
+ Container sample-app-postgres-1 Started 
+postgres-1  | The files belonging to this database system will be owned by user "postgres".
+postgres-1  | This user must also own the server process.
+postgres-1  | 
+postgres-1  | The database cluster will be initialized with locale "en_US.utf8".
+postgres-1  | The default database encoding has accordingly been set to "UTF8".
+postgres-1  | The default text search configuration will be set to "english".
+postgres-1  | 
+postgres-1  | Data page checksums are disabled.
+postgres-1  | 
+postgres-1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres-1  | creating subdirectories ... ok
+postgres-1  | selecting dynamic shared memory implementation ... posix
+postgres-1  | selecting default max_connections ... 100
+ Container keploy-v3-be0e Started 
+ Container sample-app-postgres-1 Waiting 
+ Container keploy-v3-be0e Waiting 
+postgres-1  | selecting default shared_buffers ... 128MB
+postgres-1  | selecting default time zone ... UTC
+postgres-1  | creating configuration files ... ok
+postgres-1  | running bootstrap script ... ok
+keploy-v3-be0e  | 🐰 Keploy: 2026-05-31T12:01:40.817888664Z 	[34mINFO[0m	Starting Keploy	{"version": "3.5.25", "apiServerURL": "https://api.staging.keploy.io", "inDocker": true}
+🐰 Keploy: 2026-05-31T13:01:40.819456764+01:00 	[35mDEBUG[0m	Checking agent health	{"url": "http://localhost:34317/agent/health"}
+postgres-1      | sh: locale: not found
+postgres-1      | 2026-05-31 12:01:40.828 UTC [34] WARNING:  no usable system locales were found
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:40Z	[35mDEBUG[0m	config has been initialised	{"for cmd": "agent", "config": {"path":"","appName":"","appId":0,"command":"","templatize":{"testSets":[]},"port":34317,"e2e":false,"dnsPort":26789,"proxyPort":16789,"incomingProxyPort":0,"debug":true,"disableTele":true,"disableANSI":false,"jsonOutput":false,"inDocker":true,"containerName":"","networkName":"","buildDelay":30,"test":{"selectedTests":{},"globalNoise":{"global":{},"test-sets":{}},"replaceWith":{"global":{"url":null,"port":null},"test-sets":{}},"delay":5,"healthUrl":"","healthPollTimeout":60000000000,"host":"localhost","port":0,"grpcPort":0,"ssePort":0,"protocol":{"grpc":{"port":0},"http":{"port":0},"sse":{"port":0}},"apiTimeout":5,"skipCoverage":false,"coverageReportPath":"","ignoreOrdering":true,"mongoPassword":"default@123","language":"","removeUnusedMocks":false,"preserveFailedMocks":false,"fallBackOnMiss":false,"jacocoAgentPath":"","basePath":"","mocking":true,"ignoredTests":{},"disableLineCoverage":false,"updateTemplate":false,"mustPass":false,"maxFailAttempts":5,"maxFlakyChecks":1,"protoFile":"","protoDir":"","protoInclude":[],"compareAll":false,"schemaMatch":false,"updateTestMapping":false,"disableAutoHeaderNoise":false,"strictMockWindow":true,"keepAppAlive":false},"record":{"filters":[],"basePath":"","recordTimer":0,"metadata":"","testCaseNaming":"descriptive","sync":false,"enableSampling":0,"memoryLimit":0,"globalPassthrough":false,"tlsPrivateKeyPath":"","capturePackets":false,"opportunisticTlsIntercept":false,"recordBuffer":{"maxMemoryPerConnection":67108864,"queueSize":1024}},"report":{"selectedTestSets":null,"showFullBody":false,"reportPath":"","summary":false,"testCaseIDs":null,"format":""},"normalize":{"selectedTests":null,"testReport":"","allowHighRisk":false},"disableMapping":true,"retryPassing":false,"configPath":"/home/ayush/test-low-latency/sample-app","bypassRules":[],"mysqlPorts":null,"enableTesting":true,"generateGithubActions":false,"keployContainer":"keploy-v3","keployNetwork":"keploy-network","cmdType":"native","contract":{"services":[],"tests":[],"path":"","download":false,"generate":false,"driven":"consumer","mappings":{"servicesMapping":{},"self":"s1"}},"agent":{"ClientNSPID":0,"Container":"","KeployContainer":"","DockerDelay":0,"Synchronous":false,"AgentURI":"","IsDocker":false,"CommandType":"","EnableTesting":false,"ProxyPort":0,"IncomingProxyPort":0,"DnsPort":0,"Mode":"","GlobalPassthrough":false,"CapturePackets":false,"OpportunisticTLSIntercept":false,"AgentPort":0,"AppPorts":null,"AppNetworks":null,"NetworkAliases":null,"BuildDelay":0,"PassThroughPorts":null,"MemoryLimit":0,"ConfigPath":"","RecordBufferMaxMemoryPerConn":0,"RecordBufferQueueSize":0,"ExtraArgs":null,"EnableSampling":0,"EnableIPv6Redirect":false,"CAJavaHome":"","InMemoryCompose":null},"inCi":false,"serverPort":0}}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:40Z	[35mDEBUG[0m	Starting the agent in 	{"mode": "test"}
+postgres-1      | performing post-bootstrap initialization ... ok
+postgres-1      | syncing data to disk ... ok
+postgres-1      | 
+postgres-1      | 
+postgres-1      | Success. You can now start the database server using:
+postgres-1      | 
+postgres-1      |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres-1      | 
+postgres-1      | initdb: warning: enabling "trust" authentication for local connections
+postgres-1      | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+postgres-1      | waiting for server to start....2026-05-31 12:01:41.172 UTC [40] LOG:  starting PostgreSQL 16.13 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+postgres-1      | 2026-05-31 12:01:41.172 UTC [40] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1      | 2026-05-31 12:01:41.175 UTC [43] LOG:  database system was shut down at 2026-05-31 12:01:41 UTC
+postgres-1      | 2026-05-31 12:01:41.179 UTC [40] LOG:  database system is ready to accept connections
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Attaching SockOps...
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	keploy initialized and probes added to the kernel.
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[34mINFO[0m	recording start boottime set	{"ns": 525980812982948}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Registering the client Info with keploy
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	IPv4-mapped IPv6 for 172.19.0.3 is: 00000000:00000000:0000ffff:ac130003
+keploy-v3-be0e  | 
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	IPv4-mapped IPv6 for 172.19.0.3 is: 00000000:00000000:0000ffff:ac130003
+keploy-v3-be0e  | 
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	proxy ips	{"ipv4": "172.19.0.3", "ipv6": [0,0,65535,2886926339]}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "grpc", "ParserType": "grpc"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "postgres_v2", "ParserType": "postgres_v2"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "postgres_v3", "ParserType": "postgres_v3"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "http", "ParserType": "http"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "kafka", "ParserType": "kafka"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "pulsar", "ParserType": "pulsar"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "redis", "ParserType": "redis"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "http2", "ParserType": "http2"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "generic", "ParserType": "generic"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "sqs", "ParserType": "sqs"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "hbase", "ParserType": "hbase"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "zookeeper", "ParserType": "zookeeper"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "mysql", "ParserType": "mysql"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	initialized the parser integration	{"Type": "mongo_v2", "ParserType": "mongo_v2"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Detected Docker Shared Volume mode. Exporting certs...	{"path": "/tmp/keploy-tls"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[34mINFO[0m	Merged system CA bundle with Keploy MITM CA	{"system_bytes": 216591, "keploy_bytes": 562, "source_path": "/etc/ssl/certs/ca-certificates.crt", "output": "/tmp/keploy-tls/ca.crt", "keploy_only_output": "/tmp/keploy-tls/keploy-ca.crt"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	TLS Certificates successfully exported to shared volume
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	captured upstream DNS resolvers for forward-on-miss	{"servers": ["127.0.0.11"], "port": "53"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Starting Tcp Dns Server for handling Dns queries over TCP
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Starting Udp Dns Server for handling Dns queries over UDP
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[34mINFO[0m	starting UDP DNS server at addr :26789
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[34mINFO[0m	starting TCP DNS server at addr :26789
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Proxy server is listening on :[::]:16789
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[34mINFO[0m	Keploy has taken control of the DNS resolution mechanism, your application may misbehave if you have provided wrong domain name in your application code.
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[34mINFO[0m	Proxy started at port:16789
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[34mINFO[0m	Starting Agent's HTTP server on :	{"port": 34317}
+postgres-1      |  done
+postgres-1      | server started
+postgres-1      | CREATE DATABASE
+postgres-1      | 
+postgres-1      | 
+postgres-1      | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+postgres-1      | 
+postgres-1      | waiting for server to shut down....2026-05-31 12:01:41.302 UTC [40] LOG:  received fast shutdown request
+postgres-1      | 2026-05-31 12:01:41.303 UTC [40] LOG:  aborting any active transactions
+postgres-1      | 2026-05-31 12:01:41.305 UTC [40] LOG:  background worker "logical replication launcher" (PID 46) exited with exit code 1
+postgres-1      | 2026-05-31 12:01:41.305 UTC [41] LOG:  shutting down
+postgres-1      | 2026-05-31 12:01:41.305 UTC [41] LOG:  checkpoint starting: shutdown immediate
+postgres-1      | 2026-05-31 12:01:41.325 UTC [41] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.012 s, sync=0.007 s, total=0.020 s; sync files=301, longest=0.001 s, average=0.001 s; distance=4272 kB, estimate=4272 kB; lsn=0/191E958, redo lsn=0/191E958
+postgres-1      | 2026-05-31 12:01:41.330 UTC [40] LOG:  database system is shut down
+postgres-1      |  done
+postgres-1      | server stopped
+postgres-1      | 
+postgres-1      | PostgreSQL init process complete; ready for start up.
+postgres-1      | 
+postgres-1      | 2026-05-31 12:01:41.420 UTC [1] LOG:  starting PostgreSQL 16.13 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+postgres-1      | 2026-05-31 12:01:41.420 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-1      | 2026-05-31 12:01:41.420 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-1      | 2026-05-31 12:01:41.423 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1      | 2026-05-31 12:01:41.427 UTC [56] LOG:  database system was shut down at 2026-05-31 12:01:41 UTC
+postgres-1      | 2026-05-31 12:01:41.431 UTC [1] LOG:  database system is ready to accept connections
+🐰 Keploy: 2026-05-31T13:01:41.819436262+01:00 	[35mDEBUG[0m	Checking agent health	{"url": "http://localhost:34317/agent/health"}
+🐰 Keploy: 2026-05-31T13:01:41.820640434+01:00 	[35mDEBUG[0m	Agent health check response	{"status_code": 200, "body": "\"OK\"\n"}
+🐰 Keploy: 2026-05-31T13:01:41.820714224+01:00 	[35mDEBUG[0m	BeforeTestSetCompose hook executed	{"testRunID": "test-run-4", "testSetID": "test-set-11"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	dedup is disabled
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	MockOutgoing function called	{"options": {"Rules":[],"MongoPassword":"default@123","TLSPrivateKey":"","Synchronous":false,"SQLDelay":20000000000,"Mocking":true,"DstCfg":null,"Backdate":"2026-05-31T12:00:51.236496531Z","NoiseConfig":{},"DisableAutoHeaderNoise":false,"SkipTLSMITM":false,"ConnKey":"","CapturePackets":false,"OpportunisticTLSIntercept":false,"MysqlPorts":[]}}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Successfully written to nsswitch config of linux
+🐰 Keploy: 2026-05-31T13:01:41.870946447+01:00 	[35mDEBUG[0m	per-test mocks count	{"count": 13}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Successfully stored mocks for client
+🐰 Keploy: 2026-05-31T13:01:41.930311502+01:00 	[35mDEBUG[0m	Mapping-based mock filtering strategy is disabled, using timestamp-based mock filtering strategy
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	UpdateMockParams called	{"afterTime": "🐰 Keploy(agent): 2000-01-01T00:00:00Z", "beforeTime": "🐰 Keploy(agent): 2026-05-31T13:01:41+01:00", "useMappingBased": false, "mockMappingCount": 0, "strictMockWindow": true}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[34mINFO[0m	strict mock-window containment is ACTIVE for this session — per-test mocks whose request timestamp falls outside the outer test window will be dropped rather than promoted across tests. If your replays start reporting missing mocks after an upgrade, this is likely why. To opt out: set KEPLOY_STRICT_MOCK_WINDOW=0 in the environment, OR test.strictMockWindow: false in keploy.yaml.	{"viaPerCallFlag": true, "viaEnvOverride": false, "escape_hatch_env": "KEPLOY_STRICT_MOCK_WINDOW=0", "escape_hatch_config": "test.strictMockWindow: false"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	strict mock window active for test	{"windowStart": "🐰 Keploy(agent): 2000-01-01T00:00:00Z", "windowEnd": "🐰 Keploy(agent): 2026-05-31T13:01:41+01:00"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Original mocks before filtering	{"originalFiltered": 13, "originalUnfiltered": 46}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	After filtering	{"filteredMocks": 13, "unfilteredMocks": 46, "unfilteredWithIsFilteredTrue": 0, "unfilteredWithIsFilteredFalse": 46}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	routed startup-init mocks into startup tree	{"count": 59, "firstTestWindow": "🐰 Keploy(agent): 0001-01-01T00:00:00Z", "initialStaging": true}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	DEBUG_TRACE SetFilteredMocks: tree swapped + revision bumped	{"mockManagerPtr": "0xc0000f8960", "inputMocks": 0, "postgresV3Mocks": 0, "postgresV3MockNames": [], "newRevision": 1}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Time taken to update mock params duration :	{"duration": "1.081244ms"}
+🐰 Keploy: 2026-05-31T13:01:41.932308099+01:00 	[35mDEBUG[0m	Successfully sent mock filter parameters to agent	{"useMappingBased": false, "mockMappingCount": 0}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Agent marked as ready	{"file": "/tmp/agent.ready"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:41Z	[35mDEBUG[0m	Keploy Agent is ready from the ...
+🐰 Keploy: 2026-05-31T13:01:41.932985275+01:00 	[35mDEBUG[0m	Successfully marked agent as ready
+ Container sample-app-postgres-1 Healthy 
+ Container keploy-v3-be0e Healthy 
+ Container provider_engagement_service Starting 
+ Container provider_engagement_service Started 
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	DNS mock miss resolved via upstream forward	{"query": "postgres.", "qtype": "AAAA", "rcode": 0, "answers": 0}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	DNS mock miss resolved via upstream forward	{"query": "postgres.", "qtype": "A", "rcode": 0, "answers": 1}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 57382, "Time": 1780228906}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 57382}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "0", "Destination ConnectionID": "1", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:57382", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 0, "Duration(ms)": 0}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[35mDEBUG[0m	discarding mock error outside active test	{"error": "mock not found: BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "totalDiscarded": 1}
+keploy-v3-be0e  | 🐰 Keploy(agent): 2026-05-31T12:01:46Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 1/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 57384, "Time": 1780228907}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 57384}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "2", "Destination ConnectionID": "3", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:57384", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 2, "Duration(ms)": 1}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:47Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 2/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 57398, "Time": 1780228908}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 57398}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "4", "Destination ConnectionID": "5", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:57398", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 4, "Duration(ms)": 0}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:48Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 3/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 57400, "Time": 1780228910}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 57400}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "6", "Destination ConnectionID": "7", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:57400", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 6, "Duration(ms)": 1}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:50Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 4/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 42116, "Time": 1780228911}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 42116}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "8", "Destination ConnectionID": "9", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:42116", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 8, "Duration(ms)": 1}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:51Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 5/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 42130, "Time": 1780228912}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 42130}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "10", "Destination ConnectionID": "11", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:42130", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 10, "Duration(ms)": 1}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:52Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 6/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 42136, "Time": 1780228913}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 42136}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "12", "Destination ConnectionID": "13", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:42136", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 12, "Duration(ms)": 1}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:53Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 7/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 42152, "Time": 1780228915}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 42152}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "14", "Destination ConnectionID": "15", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:42152", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 14, "Duration(ms)": 1}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:55Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 8/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 42162, "Time": 1780228916}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 42162}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "16", "Destination ConnectionID": "17", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:42162", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 16, "Duration(ms)": 0}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:56Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 9/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 42176, "Time": 1780228917}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 42176}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "18", "Destination ConnectionID": "19", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:42176", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 18, "Duration(ms)": 1}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:57Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 10/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 42184, "Time": 1780228918}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 42184}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "20", "Destination ConnectionID": "21", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:42184", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 20, "Duration(ms)": 1}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:01:58Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 11/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 42198, "Time": 1780228920}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 42198}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "22", "Destination ConnectionID": "23", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:42198", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 22, "Duration(ms)": 1}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:00Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 12/30)
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	Inside handleConnection of proxyServer	{"source port": 35714, "Time": 1780228921}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	Handling outgoing connection to destination port	{"Destination port": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	successfully removed entry from redirect proxy map	{"(Key)/SourcePort": 35714}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	the destination is ipv4
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m		{"DestIp4": 2886926338, "DestPort": 5432}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "sqs"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	determined the protocol is not HTTP	{"Type": "sqs", "isHTTP": false}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "redis"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "zookeeper"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	Checking for the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	The external dependency is supported. Hence using the parser	{"ParserType": "postgres_v3"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[31mERROR[0m	v3 replay: failed to build session index	{"Type": "postgres_v3", "totalMocks": 46, "pgV3Mocks": 45, "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds", "next_step": "verify mocks.yaml actually contains PostgresV3 mocks (at least one `kind: PostgresV3` entry with spec.postgresV3.type in {session,query,...}), re-record the test-set if the file was edited by hand or captured before the v3 parser landed, and confirm the running keploy server version includes the PostgresV3 mock kind and envelope"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[31mERROR[0m	failed to mock the outgoing message	{"Client ConnectionID": "24", "Destination ConnectionID": "25", "Destination Address": "172.19.0.2:5432", "Client IP Address": "172.19.0.3:35714", "error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[35mDEBUG[0m	time taken by proxy to execute the flow	{"Client ConnectionID": 24, "Duration(ms)": 0}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:01Z	[31mERROR[0m	failed to handle the client connection	{"error": "BuildIndex: query mock \"mock-10\" (invocation \"proxyless-5432:9\", hash sha256:83b556f1ffe78c1283dfa0a60cb7a032029891447cb14af2bb30a4e13b08e2e8) has 7 ParamOIDs but 0 BindValues — every v3 query cohort with partial ParamOIDs must have len==binds"}
+provider_engagement_service  | Traceback (most recent call last):
+provider_engagement_service  |   File "<string>", line 32, in <module>
+provider_engagement_service  |     asyncio.run(go())
+provider_engagement_service  |     ~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 195, in run
+provider_engagement_service  |     return runner.run(main)
+provider_engagement_service  |            ~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/runners.py", line 118, in run
+provider_engagement_service  |     return self._loop.run_until_complete(task)
+provider_engagement_service  |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+provider_engagement_service  |     return future.result()
+provider_engagement_service  |            ~~~~~~~~~~~~~^^
+provider_engagement_service  |   File "<string>", line 22, in go
+provider_engagement_service  |     conn = await asyncpg.connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2421, in connect
+provider_engagement_service  |     return await connect_utils._connect(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<20 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1049, in _connect
+provider_engagement_service  |     conn = await _connect_addr(
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |     ...<6 lines>...
+provider_engagement_service  |     )
+provider_engagement_service  |     ^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 882, in _connect_addr
+provider_engagement_service  |     return await __connect_addr(params, False, *args)
+provider_engagement_service  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+provider_engagement_service  |   File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 934, in __connect_addr
+provider_engagement_service  |     await connected
+provider_engagement_service  | asyncpg.exceptions.ConnectionDoesNotExistError: connection was closed in the middle of operation
+provider_engagement_service  | entrypoint: waiting for postgres (attempt 13/30)
+🐰 Keploy: 2026-05-31T13:02:01.952044421+01:00 	[35mDEBUG[0m	BeforeTestSetReplay hook executed	{"testSetID": "test-set-11"}
+🐰 Keploy: 2026-05-31T13:02:01.953484622+01:00 	[35mDEBUG[0m	consumed mocks during initial setup	{"testSetID": "test-set-11", "count": 0, "mocks": null}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:02Z	[35mDEBUG[0m	UpdateMockParams called	{"afterTime": "🐰 Keploy(agent): 2026-05-31T12:00:51Z", "beforeTime": "🐰 Keploy(agent): 2026-05-31T12:00:52Z", "useMappingBased": false, "mockMappingCount": 0, "strictMockWindow": true}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:02Z	[35mDEBUG[0m	strict mock window active for test	{"windowStart": "🐰 Keploy(agent): 2026-05-31T12:00:51Z", "windowEnd": "🐰 Keploy(agent): 2026-05-31T12:00:52Z"}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:02Z	[35mDEBUG[0m	Original mocks before filtering	{"originalFiltered": 13, "originalUnfiltered": 46}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:02Z	[35mDEBUG[0m	lax-promoted per-test mocks into session pool for cross-test reuse	{"count": 11}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:02Z	[35mDEBUG[0m	After filtering	{"filteredMocks": 2, "unfilteredMocks": 57, "unfilteredWithIsFilteredTrue": 0, "unfilteredWithIsFilteredFalse": 57}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:02Z	[35mDEBUG[0m	DEBUG_TRACE SetFilteredMocks: tree swapped + revision bumped	{"mockManagerPtr": "0xc0000f8960", "inputMocks": 2, "postgresV3Mocks": 2, "postgresV3MockNames": ["mock-51", "mock-52"], "newRevision": 3}
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:02Z	[35mDEBUG[0m	Time taken to update mock params duration :	{"duration": "894.455µs"}
+🐰 Keploy: 2026-05-31T13:02:02.002623321+01:00 	[35mDEBUG[0m	Successfully sent mock filter parameters to agent	{"useMappingBased": false, "mockMappingCount": 0}
+🐰 Keploy: 2026-05-31T13:02:02.00276975+01:00 	[35mDEBUG[0m	Proxy error channel is nil, skipping error monitoring
+🐰 Keploy: 2026-05-31T13:02:02.003180887+01:00 	[35mDEBUG[0m	Simulating HTTP request	{"Test case": {"version":"api.keploy.io/v1beta1","kind":"Http","name":"post-api-public-v1-project-provider-1","description":"","created":1780228852,"updated":0,"captured":0,"http_req":{"method":"POST","proto_major":1,"proto_minor":1,"url":"http://localhost:8080/api/public/v1/project_provider_batch","url_params":null,"header":{"Accept":"*/*","Content-Length":"406","Content-Type":"application/json","Host":"localhost:8080","User-Agent":"curl/8.14.1"},"body":"{\"createdBy\":\"90ecb6c9-7fb0-4ef1-b4b5-aa8ce14c4ef8\",\n       \"projectId\":\"6e9ab068-bb9d-489a-83dc-27662a943a60\",\n       \"providers\":[{\"workspaceId\":\"cf51ed43-eec4-40c7-bb99-849368d89a40\",\n                     \"providerName\":\"QAAutotest Provider 01\",\n                     \"providerId\":\"c1a88792-8ce2-4a88-b619-b924503059d7\",\n                     \"isApprovalRequired\":false}],\n       \"allowAutoApprove\":false}","body_ref":{"path":"","size":0},"binary":"","form":null,"timestamp":"2026-05-31T12:00:51.236496531Z"},"http_resp":{"status_code":201,"header":{"Content-Length":"311","Content-Type":"application/json","Date":"Sun, 31 May 2026 12:00:50 GMT","Server":"uvicorn"},"body":"{\"id\":\"129013e8-2543-46ea-bd2e-953bd3dcdbe0\",\"createdAt\":\"2026-05-31T12:00:51.265648Z\",\"updatedAt\":\"2026-05-31T12:00:51.265648Z\",\"createdBy\":\"90ecb6c9-7fb0-4ef1-b4b5-aa8ce14c4ef8\",\"projectId\":\"6e9ab068-bb9d-489a-83dc-27662a943a60\",\"providerIds\":[\"c1a88792-8ce2-4a88-b619-b924503059d7\"],\"allowAutoApprove\":false}","status_message":"Created","proto_major":0,"proto_minor":0,"binary":"","timestamp":"2026-05-31T12:00:52.43125482Z"},"all_keys":null,"grpcResp":{"headers":{"pseudo_headers":null,"ordinary_headers":null},"body":{"compression_flag":0,"message_length":0,"decoded_data":""},"trailers":{"pseudo_headers":null,"ordinary_headers":null},"timestamp":"0001-01-01T00:00:00Z"},"grpcReq":{"headers":{"pseudo_headers":null,"ordinary_headers":null},"body":{"compression_flag":0,"message_length":0,"decoded_data":""},"timestamp":"0001-01-01T00:00:00Z"},"anchors":null,"noise":{"body.createdAt":[],"body.updatedAt":[],"header.Date":[]},"mocks":null,"type":"","curl":"curl --request POST \\\n  --url http://localhost:8080/api/public/v1/project_provider_batch \\\n  --header 'Accept: */*' \\\n  --header 'Content-Type: application/json' \\\n  --header 'Host: localhost:8080' \\\n  --header 'User-Agent: curl/8.14.1' \\\n  --data \"{\\\"createdBy\\\":\\\"90ecb6c9-7fb0-4ef1-b4b5-aa8ce14c4ef8\\\",\\n       \\\"projectId\\\":\\\"6e9ab068-bb9d-489a-83dc-27662a943a60\\\",\\n       \\\"providers\\\":[{\\\"workspaceId\\\":\\\"cf51ed43-eec4-40c7-bb99-849368d89a40\\\",\\n                     \\\"providerName\\\":\\\"QAAutotest Provider 01\\\",\\n                     \\\"providerId\\\":\\\"c1a88792-8ce2-4a88-b619-b924503059d7\\\",\\n                     \\\"isApprovalRequired\\\":false}],\\n       \\\"allowAutoApprove\\\":false}\"","is_last":true,"assertion":{"noise":{"body.createdAt":[],"body.updatedAt":[],"header.Date":[]}},"has_binary_file":false,"app_port":8080}}
+🐰 Keploy: 2026-05-31T13:02:02.004839957+01:00 	[34mINFO[0m	starting test for	{"test case": "post-api-public-v1-project-provider-1", "test set": "test-set-11"}
+🐰 Keploy: 2026-05-31T13:02:02.004870877+01:00 	[35mDEBUG[0m	Replaced host with config host	{"host": "localhost", "target": "http://localhost:8080/api/public/v1/project_provider_batch"}
+🐰 Keploy: 2026-05-31T13:02:02.004892266+01:00 	[35mDEBUG[0m	Overriding port with app_port	{"app_port": 8080}
+🐰 Keploy: 2026-05-31T13:02:02.004907506+01:00 	[35mDEBUG[0m	Final resolved target	{"target": "http://localhost:8080/api/public/v1/project_provider_batch"}
+🐰 Keploy: 2026-05-31T13:02:02.004931087+01:00 	[35mDEBUG[0m	overriding host header	{"host": "localhost:8080"}
+🐰 Keploy: 2026-05-31T13:02:02.004946887+01:00 	[35mDEBUG[0m	simulating request with conn:keep-alive (maxIdleConn=1)
+🐰 Keploy: 2026-05-31T13:02:02.005019576+01:00 	[35mDEBUG[0m	Sending request to user app:&{POST http://localhost:8080/api/public/v1/project_provider_batch HTTP/1.1 1 1 map[Accept:[*/*] Content-Length:[406] Content-Type:[application/json] Host:[localhost:8080] Keploy-Last-Testcase:[true] Keploy-Test-Id:[post-api-public-v1-project-provider-1] Keploy-Test-Set-Id:[test-set-11] User-Agent:[curl/8.14.1]] {{"createdBy":"90ecb6c9-7fb0-4ef1-b4b5-aa8ce14c4ef8",
+       "projectId":"6e9ab068-bb9d-489a-83dc-27662a943a60",
+       "providers":[{"workspaceId":"cf51ed43-eec4-40c7-bb99-849368d89a40",
+                     "providerName":"QAAutotest Provider 01",
+                     "providerId":"c1a88792-8ce2-4a88-b619-b924503059d7",
+                     "isApprovalRequired":false}],
+       "allowAutoApprove":false}} 0x9307e0 406 [] false localhost:8080 map[] map[] <nil> map[]   <nil> <nil> <nil>  0xc0016f87d0 <nil> [] map[]}
+🐰 Keploy: 2026-05-31T13:02:02.00589182+01:00 	[31mERROR[0m	failed to send testcase request to app	{"error": "Post \"http://localhost:8080/api/public/v1/project_provider_batch\": read tcp [::1]:40372->[::1]:8080: read: connection reset by peer"}
+🐰 Keploy: 2026-05-31T13:02:02.006365627+01:00 	[31mERROR[0m	failed to simulate request	{"error": "Post \"http://localhost:8080/api/public/v1/project_provider_batch\": read tcp [::1]:40372->[::1]:8080: read: connection reset by peer"}
+🐰 Keploy: 2026-05-31T13:02:02.006439696+01:00 	[35mDEBUG[0m	Skipping body comparison for non-JSON response	{"bodyType": "PLAIN"}
+🐰 Keploy: 2026-05-31T13:02:02.006468317+01:00 	[35mDEBUG[0m	Ignoring Content-Length mismatch since body content is identical	{"expected": "311", "actual": ""}
+Testrun failed for testcase with id: [31m[1m"[0m[31mpost-api-public-v1-project-provider-1[0m[31m[1m"[0m
+
+--------------------------------------------------------------------
+
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                          POST - API - PUBLIC - V 1 - PROJECT - PROVIDER - 1                           │
+├───────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                   EXPECT STATUS                   │                  ACTUAL STATUS                    │
+│ ──────────────────────────────────────────────────┼────────────────────────────────────────────────── │
+│                        201                        │                        0                          │
+│                   EXPECT HEADER                   │                  ACTUAL HEADER                    │
+│ ──────────────────────────────────────────────────┼────────────────────────────────────────────────── │
+│  Content-Type: [application/json]                 │ Content-Type: []                                  │
+│  Server: [uvicorn]                                │ Server: []                                        │
+└───────────────────────────────────────────────────────────────────────────────────────────────────────┘
+🐰 Keploy: 2026-05-31T13:02:02.007908767+01:00 	[34mINFO[0m	Retrying passing test cases to validate mock consistency	{"replay": 1, "remaining_tests": 0}
+🐰 Keploy: 2026-05-31T13:02:02.007934038+01:00 	[35mDEBUG[0m	BeforeTestResult: fetching coverage	{"url": "http://localhost:34317/dedup/coverage"}
+
+ <=========================================> 
+  TESTRUN SUMMARY. For test-set: [31m[1m"[0m[31mtest-set-11[0m[31m[1m"[0m
+	Total tests:        [34m[1m1[0m
+	Total test passed:  [34m[1m0[0m
+	Total test failed:  [34m[1m1[0m
+	Time Taken:         [31m[1m"[0m[31m23.19 s[0m[31m[1m"[0m
+ <=========================================> 
+
+🐰 Keploy: 2026-05-31T13:02:02.009830496+01:00 	[35mDEBUG[0m	AfterTestRun hook executed	{"testRunID": "test-run-4", "testSetIDs": ["test-set-11"], "coverage": {"fileCoverage":null,"totalCoverage":"","loc":{"total":0,"covered":0}}}
+🐰 Keploy: 2026-05-31T13:02:02.010327672+01:00 	[35mDEBUG[0m	no report uploaded, as disableReportUpload flag is set
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:02Z	[35mDEBUG[0m	Received graceful shutdown notification
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:02Z	[35mDEBUG[0m	Setting graceful shutdown flag on proxy
+keploy-v3-be0e               | 🐰 Keploy(agent): 2026-05-31T12:02:02Z	[35mDEBUG[0m	Graceful shutdown flag set - connection errors will be logged as debug
+🐰 Keploy: 2026-05-31T13:02:02.010787749+01:00 	[35mDEBUG[0m	Successfully notified agent of graceful shutdown
+🐰 Keploy: 2026-05-31T13:02:02.010861429+01:00 	[35mDEBUG[0m	sending SIGINT to the container	{"cmd.Process.Pid": 733076}
+🐰 Keploy: 2026-05-31T13:02:02.010915739+01:00 	[35mDEBUG[0m	signal sent to process successfully	{"pid": -733076, "signal": "interrupt"}
+ Compose Stopping Gracefully Stopping... press Ctrl+C again to force
+ Container provider_engagement_service Stopping 
+ Container provider_engagement_service Stopped 
+ Container keploy-v3-be0e Stopping 
+ Container sample-app-postgres-1 Stopping 
+ Container sample-app-postgres-1 Stopped 
+🐰 Keploy: 2026-05-31T13:02:03.014431884+01:00 	[35mDEBUG[0m	container stopped gracefully
+ Container keploy-v3-be0e Stopped 
+
+🐰 Keploy: 2026-05-31T13:02:13.530657909+01:00 	[35mDEBUG[0m	container status	{"status": "exited", "containerName": "provider_engagement_service"}
+🐰 Keploy: 2026-05-31T13:02:13.530766828+01:00 	[35mDEBUG[0m	context cancelled, error while waiting for the app to exit	{"error": "context canceled"}
+🐰 Keploy: 2026-05-31T13:02:13.530797398+01:00 	[35mDEBUG[0m	Running docker compose down to clean up containers and networks	{"composeFile": "docker-compose-tmp.yaml"}
+🐰 Keploy: 2026-05-31T13:02:14.075805827+01:00 	[35mDEBUG[0m	IT metrics successfully sent (with billing)	{"appID": "sample-app", "testsRan": 0, "mocksConsumed": 0}
+
+ <=========================================> 
+  COMPLETE TESTRUN SUMMARY. 
+	Total tests: [34m[1m1[0m
+	Total test passed: [34m[1m0[0m
+	Total test failed: [34m[1m1[0m
+	Total time taken: [31m[1m"[0m[31m23.19 s[0m[31m[1m"[0m
+
+	Test Suite Name		Total Test	Passed		Failed		Time Taken	Failed Testcases	
+
+	[31m[1m"[0m[31mtest-set-11[0m[31m[1m"[0m		[34m[1m1[0m		[34m[1m0[0m		[34m[1m1[0m		[31m[1m"[0m[31m23.19 s[0m[31m[1m"[0m	[31m[1m"[0m[31mpost-api-public-v1-project-provider-1[0m[31m[1m"[0m
+<=========================================> 
+
+🐰 Keploy: 2026-05-31T13:02:14.328061386+01:00 	[34mINFO[0m	stopping Keploy	{"reason": "replay completed successfully"}
+🐰 Keploy: 2026-05-31T13:02:14.328807382+01:00 	[35mDEBUG[0m	failed to notify agent of graceful shutdown	{"error": "Post \"http://localhost:34317/agent/graceful-shutdown\": dial tcp [::1]:34317: connect: connection refused"}
+🐰 Keploy: 2026-05-31T13:02:14.328895891+01:00 	[35mDEBUG[0m	failed to notify agent of graceful shutdown	{"error": "Post \"http://localhost:34317/agent/graceful-shutdown\": dial tcp [::1]:34317: connect: connection refused"}
